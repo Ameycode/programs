@@ -1,0 +1,16 @@
+class myexc
+{
+	public static void main(String arg[])
+	{
+		try
+		{
+			ArithmeticException ae=new ArithmeticException("div by 0");
+			throw ae;
+		}
+	
+		catch(ArithmeticException e)
+		{
+			System.out.println(e);
+		}
+	}
+}
