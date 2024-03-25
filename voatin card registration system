@@ -1,0 +1,79 @@
+import java.util.*;
+class NoIlligibleException extends Exception
+{
+	NoIlligibleException(String s)
+	{
+		super();
+	}
+}
+class illegibleExceptiondemo
+{
+	public static void main(String arg[])
+	{
+		Scanner sc=new Scanner(System.in);
+		Scanner sc1=new Scanner(System.in);
+		Scanner sc2=new Scanner(System.in);
+		Scanner sc3=new Scanner(System.in);
+		Scanner sc4=new Scanner(System.in);
+		System.out.print("\n***************************************");
+		System.out.print("\n*****VOATING ILLIGIBILITY CRITERIA*****");
+		System.out.print("\n***************************************");
+		System.out.print("\nEnter Your Name:- ");
+		String name=sc.nextLine();
+		System.out.print("\nEnter Your Age:- ");
+		int age=sc.nextInt();
+		if(age<18)
+		{
+			try
+			{
+				NoIlligibleException ne=new NoIlligibleException("\nNot Illigible...");
+				throw ne;
+			}
+			catch(NoIlligibleException e)
+			{
+				System.out.print("\n"+e);	
+			}
+		}
+		else
+		{
+			System.out.print("\n"+name+" Your Illigible For Voating...");
+			System.out.print("\nTHANK YOU..! \nFOR CHECKING YOUR ILLIGIBILITY CRITERIA.");
+			System.out.print("\n***************************************");
+			String s1="yes";
+			System.out.print("\nYour Intrested To Register For Voating card (yes/no) ");
+			String intrest=sc1.nextLine();
+			if(intrest.equals(s1))
+			{
+				System.out.print("\n***************************************");
+				System.out.print("\n*****VOATING CARD REGISTRATION FORM****");
+				System.out.print("\n***************************************");
+				System.out.print("\nEnter Full Name:- ");
+				String name1=sc1.nextLine();
+				System.out.print("\nEnter Father Name:- ");
+				String fnm=sc1.nextLine();
+				System.out.print("\nEnter Mobile No:- ");
+				double mobno=sc1.nextDouble();
+				System.out.print("\nEnter E-Mail ID:- ");
+				String email=sc2.nextLine();
+				System.out.print("\nEnter Addhar Details:- ");
+				double addhar=sc2.nextDouble();
+				System.out.print("\nEnter Gender:- ");
+				String gender=sc3.nextLine();
+				System.out.print("\nEnter Date Of Birth:- ");
+				String dob=sc3.next();
+				System.out.print("\nEnter Address:- ");
+				String add=sc4.nextLine();
+				System.out.print("\nYour Applied Successfully To The Voating Card..");
+				System.out.print("\n**************");
+				System.out.print("\n*THANK YOU..!*");
+				System.out.print("\n**************");
+			}
+			else
+			{
+				System.out.print("\n**************");
+				System.out.print("\n*OK...       *\n*THANK YOU..!*");
+				System.out.print("\n**************");
+			}
+		}
+	}
+}
