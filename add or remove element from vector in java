@@ -1,0 +1,21 @@
+import java.util.*;
+class vectordemo
+{
+	public static void main(String arg[])
+	{
+		Vector v=new Vector();
+		v.addElement(new Integer(10));
+		v.addElement(new Integer(30));
+		v.addElement(new Integer(50));
+		v.addElement(new Integer(20));
+		v.addElement(new Integer(40));
+		v.addElement(new Integer(10));
+		v.addElement(new Integer(20));
+		System.out .print("\n Vector="+v);
+		v.removeElementAt(2);
+		v.removeElementAt(2);
+		System.out .print("\n after removal="+v);
+		v.insertElementAt(new Integer(90),2);
+		System.out .print("\n after add="+v);
+	}
+}
