@@ -1,0 +1,17 @@
+import java.util.*;
+class cmddemo
+{
+	public static void main(String arg[])
+	{
+		
+		int no=Integer.parseInt(arg[0]);
+		if(no%2==0)
+		{
+			System.out.println("even");
+		}
+		else
+		{
+			System.out.println("odd");
+		}
+	}
+}
