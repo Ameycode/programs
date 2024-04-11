@@ -1,0 +1,15 @@
+import java.io.*;
+class copyfiledemo
+{
+	public static void main(String arg[])throws Exception
+	{
+		FileInputStream fin=new FileInputStream("f1.txt");
+		FileOutputStream fout=new FileOutputStream("f2.txt");
+		int b;
+		while((b=fin.read())!=-1)
+		{
+			fout.write(b);
+		}
+		System.out.print("copied...");
+	}
+}
