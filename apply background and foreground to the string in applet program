@@ -1,0 +1,16 @@
+import java.applet.*;
+import java.awt.*;
+public class backforeground extends Applet
+{
+	public void paint(Graphics g)
+	{
+		setBackground(Color.green);
+		setForeground(Color.red);
+		g.drawString("Welcome to the applet progrm",100,100);
+	}
+}
+
+/*
+<applet code="backforeground" width=500 height=500>
+</applet>
+*/
