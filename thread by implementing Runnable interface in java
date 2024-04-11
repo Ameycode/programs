@@ -1,0 +1,16 @@
+class threadA implements Runnable
+{
+	public void run()
+	{
+		System.out.println("by implementing runnable interface...");
+	}
+}
+class threadrundemo
+{
+	public static void main(String arg[])
+	{
+		threadA a=new threadA();
+		Thread t=new Thread(a);
+		t.start();
+	}
+}
